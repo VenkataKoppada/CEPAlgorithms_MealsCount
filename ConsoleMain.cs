@@ -48,7 +48,19 @@ namespace CEPAlgorithms_MealsCount
             AddStrategy<Pairs>(sponsor);
             AddStrategy<Spread>(sponsor);
             AddStrategy<Binning>(sponsor);
-            AddStrategy<SimulatedAnnealing>(sponsor);
+            var parameters = new Dictionary<string, object>
+            {
+                {"fresh_starts", 50},
+                {"iterations", 1000},
+                {"ngroups", null},
+                {"tfactor", 1000000},
+                {"annealing", 1},
+                {"delta_t", 0.01},
+                {"seed", 38},
+                {"evaluate_by", "reimbursement"}
+            };
+
+            AddStrategy<SimulatedAnnealing>(sponsor, parameters);
             AddStrategy<MixedInteger_LP>(sponsor);
 
             // evaluate all the strategies and print the best strategy
@@ -62,10 +74,26 @@ namespace CEPAlgorithms_MealsCount
         }
 
         // Helper method to add and register a strategy by type
-        static void AddStrategy<T>(Sponsor sponsor) where T : Base_Strategy, new()
+        //static void AddStrategy<T>(Sponsor sponsor) where T : Base_Strategy, new()
+        //{
+        //    var strategy = new T();
+        //    sponsor.Strategies.Add(strategy);
+        //}
+
+        // Helper method to add and register a strategy by type with optional parameters
+        static void AddStrategy<T>(Sponsor sponsor, Dictionary<string, object>? parameters = null) where T : Base_Strategy, new()
         {
-            var strategy = new T();
+            var strategy = parameters != null ?
+                (T)Activator.CreateInstance(typeof(T), parameters) :
+                new T();
             sponsor.Strategies.Add(strategy);
         }
+
+        // Overload for backward compatibility
+        static void AddStrategy<T>(Sponsor sponsor) where T : Base_Strategy, new()
+        {
+            AddStrategy<T>(sponsor, null);
+        }
+
     }
 }
