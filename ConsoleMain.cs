@@ -89,7 +89,7 @@ namespace CEPAlgorithms_MealsCount
             };
 
             AddStrategy<SimulatedAnnealing>(sponsor, parameters);
-            //AddStrategy<MixedInteger_LP>(sponsor);
+            AddStrategy<MixedInteger_LP>(sponsor);
             AddStrategy<MixedInteger_LP_CBC>(sponsor);
 
             // evaluate all the strategies and print the best strategy
