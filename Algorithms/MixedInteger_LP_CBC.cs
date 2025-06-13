@@ -204,7 +204,7 @@ namespace CEPAlgorithms_MealsCount.Algorithms
             var selectedSites = new List<Site>();
             for (int i = 0; i < sites.Count; i++)
             {
-                if (variables[i].SolutionValue() > 0.5)
+                if (variables[i].SolutionValue() > 0)
                 {
                     selectedSites.Add(sites[i]);
                 }

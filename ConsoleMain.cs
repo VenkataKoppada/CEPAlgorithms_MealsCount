@@ -40,30 +40,30 @@ namespace CEPAlgorithms_MealsCount
 
             // start the timer
 
-            //sponsor.Sites.Add(new Site("S13", 100, 10));
-            //sponsor.Sites.Add(new Site("S14", 100, 15));
-            //sponsor.Sites.Add(new Site("S15", 100, 20));
-            //sponsor.Sites.Add(new Site("S16", 100, 25));
-            //sponsor.Sites.Add(new Site("S17", 100, 30));
-            //sponsor.Sites.Add(new Site("S18", 100, 35));
-            //sponsor.Sites.Add(new Site("S19", 100, 40));
-            //sponsor.Sites.Add(new Site("S20", 100, 45));
-            //sponsor.Sites.Add(new Site("S21", 100, 50));
-            //sponsor.Sites.Add(new Site("S22", 100, 55));
-            //sponsor.Sites.Add(new Site("S23", 100, 11));
-            //sponsor.Sites.Add(new Site("S24", 100, 16));
-            //sponsor.Sites.Add(new Site("S25", 100, 10));
-            //sponsor.Sites.Add(new Site("S26", 100, 15));
-            //sponsor.Sites.Add(new Site("S27", 100, 20));
-            //sponsor.Sites.Add(new Site("S28", 100, 25));
-            //sponsor.Sites.Add(new Site("S29", 100, 30));
-            //sponsor.Sites.Add(new Site("S30", 100, 35));
-            //sponsor.Sites.Add(new Site("S31", 100, 40));
-            //sponsor.Sites.Add(new Site("S32", 100, 45));
-            //sponsor.Sites.Add(new Site("S33", 100, 50));
-            //sponsor.Sites.Add(new Site("S34", 100, 55));
-            //sponsor.Sites.Add(new Site("S35", 100, 11));
-            //sponsor.Sites.Add(new Site("S36", 100, 16));
+            sponsor.Sites.Add(new Site("S13", 100, 10));
+            sponsor.Sites.Add(new Site("S14", 100, 15));
+            sponsor.Sites.Add(new Site("S15", 100, 20));
+            sponsor.Sites.Add(new Site("S16", 100, 25));
+            sponsor.Sites.Add(new Site("S17", 100, 30));
+            sponsor.Sites.Add(new Site("S18", 100, 35));
+            sponsor.Sites.Add(new Site("S19", 100, 40));
+            sponsor.Sites.Add(new Site("S20", 100, 45));
+            sponsor.Sites.Add(new Site("S21", 100, 50));
+            sponsor.Sites.Add(new Site("S22", 100, 55));
+            sponsor.Sites.Add(new Site("S23", 100, 11));
+            sponsor.Sites.Add(new Site("S24", 100, 16));
+            sponsor.Sites.Add(new Site("S25", 100, 10));
+            sponsor.Sites.Add(new Site("S26", 100, 15));
+            sponsor.Sites.Add(new Site("S27", 100, 20));
+            sponsor.Sites.Add(new Site("S28", 100, 25));
+            sponsor.Sites.Add(new Site("S29", 100, 30));
+            sponsor.Sites.Add(new Site("S30", 100, 35));
+            sponsor.Sites.Add(new Site("S31", 100, 40));
+            sponsor.Sites.Add(new Site("S32", 100, 45));
+            sponsor.Sites.Add(new Site("S33", 100, 50));
+            sponsor.Sites.Add(new Site("S34", 100, 55));
+            sponsor.Sites.Add(new Site("S35", 100, 11));
+            sponsor.Sites.Add(new Site("S36", 100, 16));
 
 
 
